@@ -26,7 +26,7 @@
                         socket.nickname = $('#msg').val()
                         socket.emit('login', socket.nickname)
 
-                        $('#msg').prop('placeholder', 'Digite uma mensagem');
+                        $('#msg').prop('placeholder', 'Digite uma mensagem e pressione ENTER para enviar');
                         $('#button1').html('Enviar');
 
                         socket.on('status', function (msg) {
